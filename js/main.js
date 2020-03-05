@@ -5,8 +5,7 @@
  function login() {
 	var x = document.getElementById("Username").value;
 	var y = document.getElementById("Password").value;
-	alert("login successfully")
-	if(x == 'hai' && x =='hai') {
+	if(x.length > 0 && x == '123'&& y.length > 0 && y =='123') {
 	var x1 = document.getElementById("about-section");
 	var x2 = document.getElementById("resume-section");
 	var x3 = document.getElementById("services-section");
@@ -17,6 +16,12 @@
 	x3.style.display = "block";
 	x4.style.display = "block";
 	x5.style.display = "block";
+	
+	}else if (x.length == 0 || y.length == 0) {
+		alert("please input Username and Password !")
+	} else  {
+		alert("login failure",x)
+		hideInfo();
 	}
 };
  function hideInfo() {
