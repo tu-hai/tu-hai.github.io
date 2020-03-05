@@ -9686,7 +9686,7 @@ input[type=text], input[type=password] {
 
 .bnt-login {
   font-weight: 600;
-  width: 50%;
+  float: right;
   color: #282726;
   background-color: #f05837;
   border: none;
