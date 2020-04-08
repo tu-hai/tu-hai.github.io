@@ -13,7 +13,7 @@
 	var x5 = document.getElementById("blog-section");
 	x1.style.display = "block";
 	x2.style.display = "block";
-	x3.style.display = "block";
+//	x3.style.display = "block";
 	x4.style.display = "block";
 	x5.style.display = "block";
 	
