@@ -1170,7 +1170,12 @@ pre {
   .offset-lg-10 {
     margin-left: 83.33333%; }
   .offset-lg-11 {
-    margin-left: 91.66667%; } }
+    margin-left: 91.66667%; } 
+  .ftco-section  {
+    display: none!important;
+  }
+
+  }
 
 @media (min-width: 1200px) {
   .col-xl {
