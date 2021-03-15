@@ -8,12 +8,12 @@
 	if(x.length > 0 && x == '123'&& y.length > 0 && y =='123') {
 	var x1 = document.getElementById("about-section");
 	var x2 = document.getElementById("resume-section");
-	// var x3 = document.getElementById("services-section");
+	 var x3 = document.getElementById("services-section");
 	var x4 = document.getElementById("projects-section");
 	var x5 = document.getElementById("blog-section");
 	x1.style.display = "block";
 	x2.style.display = "block";
-//	x3.style.display = "block";
+	x3.style.display = "block";
 	x4.style.display = "block";
 	x5.style.display = "block";
 	
@@ -27,13 +27,13 @@
  function hideInfo() {
 	var x1 = document.getElementById("about-section");
 	var x2 = document.getElementById("resume-section");
-	// var x3 = document.getElementById("services-section");
+	var x3 = document.getElementById("services-section");
 	var x4 = document.getElementById("projects-section");
 	var x5 = document.getElementById("blog-section");
-	if (x1.style.display != "none" || x2.style.display != "none" || x3style.display != "none" || x4.style.display != "none" || x5.style.display != "none") {
+	if (x1 & x1.style.display != "none" ||x2 & x2.style.display != "none" || x3 & x3.style.display != "none" || x4 & x4.style.display != "none" ||x5 & x5.style.display != "none") {
 	  x1.style.display = "none";
 	  x2.style.display = "none";
-	//   x3.style.display = "none";
+	x3.style.display = "none";
 	  x4.style.display = "none";
 	  x5.style.display = "none";
 	} else {
