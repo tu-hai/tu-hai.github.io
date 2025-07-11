@@ -24,22 +24,27 @@
 		hideInfo();
 	}
 };
- function hideInfo() {
-	var x1 = document.getElementById("about-section");
-	var x2 = document.getElementById("resume-section");
-	var x3 = document.getElementById("services-section");
-	var x4 = document.getElementById("projects-section");
-	var x5 = document.getElementById("blog-section");
-	if (x1 & x1.style?.display != "none" || x2 & x2.style?.display != "none" || x3 & x3.style?.display != "none" || x4 & x4.style?.display != "none" || x5 & x5.style?.display != "none") {
-	  x1.style.display = "none";
-	  x2.style.display = "none";
-	x3.style.display = "none";
-	  x4.style.display = "none";
-	  x5.style.display = "none";
-	} else {
-	  x.style.display = "block";
-	}
- }
+function hideInfo() {
+  var x1 = document.getElementById("about-section");
+  var x2 = document.getElementById("resume-section");
+  var x3 = document.getElementById("services-section");
+  var x4 = document.getElementById("projects-section");
+  var x5 = document.getElementById("blog-section");
+
+  const sections = [x1, x2, x3, x4, x5];
+  let isVisible = sections.some(x => x && x.style?.display !== "none");
+
+  if (isVisible) {
+    sections.forEach(x => {
+      if (x) x.style.display = "none";
+    });
+  } else {
+    sections.forEach(x => {
+      if (x) x.style.display = "block";
+    });
+  }
+}
+
  hideInfo();
 
 
