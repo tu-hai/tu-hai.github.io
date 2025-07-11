@@ -38,7 +38,7 @@ function hideInfo() {
     });
   } else {
     sections.forEach(x => {
-      if (x) x.style.display = "block";
+      if (x) x.style?.display = "block";
     });
   }
 }
