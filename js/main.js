@@ -3,44 +3,11 @@
  	easing: 'slide'
  });
 function login() {
-  const username = document.getElementById("Username").value.trim();
-  const password = document.getElementById("Password").value.trim();
-  const sections = document.querySelectorAll(
-    "#about-section, #resume-section, #services-section, #projects-section, #blog-section"
-  );
-
-  if (!username || !password) {
-    alert("Please input Username and Password!");
-    return;
-  }
-
-  if (username === '123' && password === '123') {
-    sections.forEach(section => section.style.display = "block");
-  } else {
-    alert("Login failure");
-    hideInfo();
-  }
+ 
 }
 
 function hideInfo() {
-  var x1 = document.getElementById("about-section");
-  var x2 = document.getElementById("resume-section");
-  var x3 = document.getElementById("services-section");
-  var x4 = document.getElementById("projects-section");
-  var x5 = document.getElementById("blog-section");
 
-  const sections = [x1, x2, x3, x4, x5];
-  let isVisible = sections.some(x => x && x.style?.display !== "none");
-
-  if (isVisible) {
-    sections.forEach(x => {
-      if (x) x.style?.display = "none";
-    });
-  } else {
-    sections.forEach(x => {
-      if (x) x.style?.display = "block";
-    });
-  }
 }
 
  hideInfo();
